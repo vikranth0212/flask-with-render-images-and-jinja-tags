@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/c1.css')}}">
+</head>
+<body>
+    <center>
+        <h1>send_html which is rendered by Flask by using render_templates</h1>
+        <h1>{{name}}</h1>
+
+        <img src="{{url_for('static',filename='images/flower.jpg')}}" alt="" srcset="" height="300px" width="300px">
+        <br>
+        <!-- url_for is used for navigation purpose,it will go to static folder then images and select that par.img -->
+        <h1><a href="{{url_for('properties')}}">Go to properties Page</a></h1>
+        <!-- url_for is used to navigate,it will go to that function -->
+    </center>
+</body>
+</html>
